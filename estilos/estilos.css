@@ -1,0 +1,691 @@
+
+
+
+* {
+	margin: 0;
+	padding: 0;
+	background: url(../imagenes/fondo2.jpg) repeat;
+}
+div#contenedor {
+	width: 910px;
+	height: 600px; 
+	margin: 50px auto;
+	border:1px solid #aaa;
+}
+
+/*Generales*/
+.floatLeft {
+	float: left;
+}
+
+
+.oculto {
+	display: none;
+}
+
+.hover:hover {
+
+	cursor: pointer;
+}
+
+.mostrado {
+	display: block;
+	z-index: 90;
+}
+
+.seleccionado {
+	border:px yellow solid;
+}
+
+/*Herramientas*/
+div#panelHerramientas {
+	width: 100%;
+	height: 110px;
+	position: relative;
+	background: rgb(215,209,208);
+}
+
+div#panelHerramientas div {
+	margin-right: 1px solid black;
+	
+}
+
+div#panelNuevo {
+	width: 110px;
+	height: 100%;
+	background: rgb(215,209,208);
+	border-right: 1px solid #aaa;
+}
+
+/*Contenedor oculto*/
+div#panelTexto {
+	width: 189px;
+	height: 100%;
+	background: rgb(215,209,208);
+	position: absolute;
+	border-right: 1px solid #aaa;
+	top: 0px;
+	left: 110px;
+	margin: none;
+}
+
+div#panelTexto h3 {
+	margin-top:.3em;
+	margin-left: 3em;
+	background: rgb(215,209,208);
+}
+
+div#selects {
+	background: rgb(215,209,208);
+}
+
+div#selects select {
+	margin-top: .6em;
+	margin-left: .4em;
+	width: 70px;
+	height: 20px;
+	background: white;
+}
+
+div#inputs label{
+	width: 30px;
+	height: 30px;
+	display: block !important;
+	text-indent: -99em;
+	float: left;
+	margin-top:.6em;
+	margin-left: .5em;
+}
+
+/*Iconos del menu oculto*/
+
+label#lbold {
+	background: url(../imagenes/texto.jpg) -40px -40px no-repeat;
+}
+
+label#litalic {
+	background: url(../imagenes/texto.jpg) -100px -40px no-repeat;
+}
+
+label#lNormal {
+	background: url(../imagenes/texto.jpg) -210px -40px no-repeat;
+}
+
+label#lSalir {
+	background: url(../imagenes/icons2.jpg) -284px -164px no-repeat;
+}
+
+label#lbold:hover {
+	background: url(../imagenes/texto2.jpg) -40px -40px no-repeat;
+}
+
+label#litalic:hover {
+	background: url(../imagenes/texto2.jpg) -100px -40px no-repeat;
+}
+
+label#lNormal:hover {
+	background: url(../imagenes/texto2.jpg) -210px -40px no-repeat;
+}
+
+label#lSalir:hover {
+	background: url(../imagenes/icons3.jpg) -284px -164px no-repeat;
+}
+
+div#panelImagen {
+	width: 189px;
+	height: 100%;
+	background: rgb(215,209,208);
+	border-right: 1px solid #aaa;
+}
+
+div#panelFormas {
+	width: 200px;
+	height: 100%;
+	background: rgb(215,209,208);
+	overflow: hidden;
+	perspective:1000px;
+	border-right: 1px solid #aaa;
+}
+
+
+
+
+
+div#panelTamanioColor {
+	width: 400px;
+	height: 100%;
+	background:rgb(215,209,208);
+
+}
+
+/*SubContenedor*/
+div#subcontenedor {
+	width: 100%;
+	height: 500px;
+}
+
+canvas#mycanvas {
+	
+	
+	background: white;
+	float: left;
+	overflow: hidden;
+	
+}
+
+div#panelCapas {
+	background: #58c3bb;
+	width: 120px;
+	height: 500px;
+	float: left;
+
+}
+
+div#panelMasColores {
+	background: #58c3bb;
+	width: 120px;
+	height: 500px;
+	float: left;
+}
+
+/*Iconos*/
+
+/*general iconos*/
+div label {
+	width: 30px;
+	height: 30px;
+	display: block;
+	text-indent: -99em;
+}
+/*
+div#panelEdicion label {
+	margin-left:3em;
+	margin-top:.7em; 
+	float: left;
+}*/
+
+div#panelImagen label {
+	margin-left:2.6em;
+	margin-top: .7em; 
+	float: left;
+}
+
+div#panelFormas label {
+	margin-left:1.6em;
+	margin-top: .7em; 
+	float: left;
+
+}
+/*exclusivos iconos*/
+label#btNuevo {
+	background: url(../imagenes/icons2.jpg) -162px -46px no-repeat;
+	margin-left:2.4em;
+	margin-top: 1em; 
+}
+
+label#btRehacer {
+	background: url(../imagenes/icons2.jpg) -46px -123px no-repeat;
+	margin-left:1.1em;
+	margin-top: .7em; 
+	float: left;
+}
+
+label#btDeshacer {
+	background: url(../imagenes/icons2.jpg) -5px -123px no-repeat;
+	margin-left:1.2em;
+	margin-top: .7em; 
+	float: left;
+}
+
+label#btNuevo:hover {
+	background: url(../imagenes/icons3.jpg) -162px -46px no-repeat;
+}
+
+label#btRehacer:hover {
+	background: url(../imagenes/icons3.jpg) -46px -123px no-repeat;
+}
+
+label#btDeshacer:hover {
+	background: url(../imagenes/icons3.jpg) -5px -123px no-repeat;
+}
+
+/*iconos Imagen*/
+label#lLapiz {
+	background: url(../imagenes/herramientas.png) -151px -125px no-repeat;
+}
+
+label#lTexto {
+	background: url(../imagenes/herramientas.png) -61px -125px no-repeat;
+}
+
+label#lBorrar {
+	background: url(../imagenes/herramientas.png) -29px -156px no-repeat;
+}
+
+label#lObtenerColor {
+	background: url(../imagenes/herramientas.png) -60px -64px no-repeat;
+}
+
+
+
+/*hover*/
+
+label#lLapiz:hover {
+	background: url(../imagenes/herramientas2.png) -151px -125px no-repeat;
+}
+
+label#lTexto:hover {
+	background: url(../imagenes/herramientas2.png) -61px -125px no-repeat;
+}
+
+label#lBorrar:hover {
+	background: url(../imagenes/herramientas2.png) -29px -156px no-repeat;
+}
+
+label#lObtenerColor:hover {
+	background: url(../imagenes/herramientas2.png) -60px -64px no-repeat;
+}
+
+
+
+/* movernos por las formas*/
+div#objeto3d {
+	width: 91.5%;
+	height: 100%;
+	transform-style:preserve-3d;
+	float: left;
+	background: rgb(215,209,208);
+}
+
+div#btnDesplazamiento {
+	border-left: 1px solid #aaa;
+	max-width: 16px;
+	height: 100%;
+	float: left;
+	position: relative;
+	background: rgb(215,209,208);
+}
+
+div#btnDesplazamiento input:hover {
+	cursor: pointer;
+}
+
+/* iconos Formas*/
+
+label#lLinea {
+	background: url(../imagenes/basicas02.png) -160px -135px no-repeat;
+}
+
+label#lRectangulo {
+	background: url(../imagenes/basicas02.png) -90px -22px no-repeat;
+}
+
+label#lTriangulorecto {
+	background: url(../imagenes/basicas02.png) -91px -64px no-repeat;
+}
+
+label#lPentagono {
+	background: url(../imagenes/basicas02.png) -24px -102px no-repeat;
+}
+
+label#lHexagono {
+	background: url(../imagenes/basicas02.png) -56px -102px no-repeat;
+}
+
+label#lOctagono {
+	background: url(../imagenes/basicas02.png) -90px -102px no-repeat;
+}
+
+label#lRombo {
+	background: url(../imagenes/basicas02.png)  -156.5px -63px no-repeat;
+}
+
+label#lTriangulo {
+	background: url(../imagenes/basicas02.png) -59px -64px no-repeat;
+}
+
+label#lFlecha {
+	background: url(../imagenes/flechas2.png) -4px -23px no-repeat;
+}
+
+label#lFlechah {
+	background: url(../imagenes/flechas2.png) -72px -23px no-repeat;
+}
+
+label#lTrayectoria {
+	background: url(../imagenes/flechas2.png) -109px -185px no-repeat;
+}
+
+label#lElipse {
+	background: url(../imagenes/basicas02.png) -186px -18px no-repeat;
+}
+
+label#lLinea:hover {
+	background: url(../imagenes/basicas04.png) -160px -135px no-repeat;
+}
+
+label#lRectangulo:hover {
+	background: url(../imagenes/basicas04.png) -90px -22px no-repeat;
+}
+
+label#lTriangulorecto:hover {
+	background: url(../imagenes/basicas04.png) -91px -64px no-repeat;
+}
+
+label#lPentagono:hover {
+	background: url(../imagenes/basicas04.png) -24px -102px no-repeat;
+}
+
+label#lHexagono:hover {
+	background: url(../imagenes/basicas04.png) -56px -102px no-repeat;
+}
+
+label#lOctagono:hover {
+	background: url(../imagenes/basicas04.png) -90px -102px no-repeat;
+}
+
+label#lRombo:hover {
+	background: url(../imagenes/basicas04.png)  -156.5px -63px no-repeat;
+}
+
+label#lTriangulo:hover {
+	background: url(../imagenes/basicas04.png) -59px -64px no-repeat;
+}
+
+label#lFlecha:hover {
+	background: url(../imagenes/flechas3.png) -4px -23px no-repeat;
+}
+
+label#lFlechah:hover {
+	background: url(../imagenes/flechas3.png) -72px -23px no-repeat;
+}
+
+label#lTrayectoria:hover {
+	background: url(../imagenes/flechas3.png) -109px -185px no-repeat;
+}
+
+label#lElipse:hover {
+	background: url(../imagenes/basicas04.png) -186px -18px no-repeat;
+}
+
+div#btnDesplazamiento label {
+	display: block;
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	
+	text-indent:-99em;
+	margin:0;
+	padding: 0;
+}
+
+
+/*Movernos por las formas*/
+label#lArriba {
+	top: 0;
+	left: 0;
+	background: url(../imagenes/arriba.png) no-repeat;
+}
+
+label#lAbajo {
+	bottom: 0;
+	left: 0;
+	background: url(../imagenes/abajo.png)   no-repeat;
+	
+}
+
+label#lArriba:hover {
+	
+	background: url(../imagenes/arribahover.png) no-repeat;
+}
+
+label#lAbajo:hover {
+	background: url(../imagenes/abajohover.png) no-repeat;
+	
+}
+
+
+
+
+
+/*hover iconos*/
+label.iconoMovimiento:hover {
+	-webkit-animation: animacion 2s infinite linear;
+}
+
+
+@-webkit-keyframes animacion {
+	 0%   { transform: rotate(40deg);}
+    50%   { transform: rotate(-40deg);}
+    100%   { transform: rotate(40deg);}
+}
+
+/*Imagenes grosor*/
+div#grosor {
+	width: 3px;
+	margin-top: .3em;
+	margin-left: 1em;
+	float: left;
+	background: rgb(215,209,208);
+}
+
+label#color1 {
+	display: block;
+	border:2px solid #aaa;
+	width: 50px;
+	height: 50px;
+	background: black;
+	margin-top: 1.5em;
+	margin-left: 7.5em;
+	float: left;
+}
+
+label#color2 {
+	display: block;
+	border:2px solid #aaa;
+	background: white;
+	width: 50px;
+	height: 50px;
+	margin-top: 1.5em;
+	margin-left: 1.5em;
+	float: left;
+}
+
+input#iColor {
+	border:2px solid #aaa;
+	background: white;
+	width: 50px;
+	height: 50px;
+	margin-top: 2em;
+	margin-left: 1.5em;
+	float: left;
+}
+
+label#color1:hover {
+	border-color: #888;
+}
+
+label#color2:hover{
+	border-color: #888;
+}
+
+input#iColor:hover {
+	border-color: #888;
+}
+
+
+div#grosor label {
+	display: block;
+	width: 40px;
+	height: 8px;
+	display: block;
+	margin-top: .25em;
+	margin-left: 2em;
+	border:2px solid #aaa;
+	text-indent: -99em;
+}
+
+label#t1 {
+	background: url(../imagenes/lineass.png) -5px -14px no-repeat;
+}
+
+label#t2 {
+	background: url(../imagenes/lineass.png) -58px -14px no-repeat;
+}
+
+label#t3 {
+	background: url(../imagenes/lineass.png) -111px -14px no-repeat;
+}
+
+label#t4 {
+	background: url(../imagenes/lineass.png) -5px -33px no-repeat;
+}
+
+label#t5 {
+	background: url(../imagenes/lineass.png) -58px -33px no-repeat;
+}
+
+label#t6 {
+	background: url(../imagenes/lineass.png) -111px -33px no-repeat;
+}
+
+label#t1:hover {
+	background: url(../imagenes/lineass2.png) -5px -14px no-repeat;
+}
+
+label#t2:hover {
+	background: url(../imagenes/lineass2.png) -58px -14px no-repeat;
+}
+
+label#t3:hover {
+	background: url(../imagenes/lineass2.png) -111px -14px no-repeat;
+}
+
+label#t4:hover {
+	background: url(../imagenes/lineass2.png) -5px -33px no-repeat;
+}
+
+label#t5:hover {
+	background: url(../imagenes/lineass2.png) -58px -33px no-repeat;
+}
+
+label#t6:hover {
+	background: url(../imagenes/lineass2.png) -111px -33px no-repeat;
+}
+
+
+/* Actividad seleccionada */
+input#Texto:checked + label {
+	background: url(../imagenes/herramientas2.png) -61px -125px no-repeat;
+}
+
+input#Lapiz:checked + label {
+	background: url(../imagenes/herramientas2.png) -151px -125px no-repeat;
+}
+
+input#Texto:checked + label {
+	background: url(../imagenes/herramientas2.png) -61px -125px no-repeat;
+}
+
+input#Borrar:checked + label {
+	background: url(../imagenes/herramientas2.png) -29px -156px no-repeat;
+}
+
+input#ObtenerColor:checked + label {
+	background: url(../imagenes/herramientas2.png) -60px -64px no-repeat;
+}
+
+/* Formas */
+input#Linea:checked  + label {
+	background: url(../imagenes/basicas04.png) -160px -135px no-repeat;
+}
+
+input#Rectangulo:checked  + label {
+	background: url(../imagenes/basicas04.png) -90px -22px no-repeat;
+}
+
+input#Triangulorecto:checked  + label {
+		background: url(../imagenes/basicas04.png) -91px -64px no-repeat;
+}
+
+input#Rombo:checked  + label {
+	background: url(../imagenes/basicas04.png)  -156.5px -63px no-repeat;
+}
+
+input#Triangulo:checked  + label {
+	background: url(../imagenes/basicas04.png) -59px -64px no-repeat;
+}
+
+input#Flecha:checked  + label {
+	background: url(../imagenes/flechas3.png) -4px -23px no-repeat;
+}
+
+input#FlechaH:checked  + label {
+	background: url(../imagenes/flechas3.png) -72px -23px no-repeat;
+}
+
+input#Trayectoria:checked  + label {
+	background: url(../imagenes/flechas3.png) -109px -185px no-repeat;
+}
+
+input#Elipse:checked  + label {
+	background: url(../imagenes/basicas04.png) -186px -18px no-repeat;
+}
+
+input#Pentagono:checked  + label {
+	background: url(../imagenes/basicas04.png) -24px -102px no-repeat;
+}
+
+input#Hexagono:checked  + label {
+	background: url(../imagenes/basicas04.png) -56px -102px no-repeat;
+}
+
+input#Octagono:checked  + label {
+	background: url(../imagenes/basicas04.png) -90px -102px no-repeat;
+}
+
+
+/*Grosor de linea seleccionado*/
+input#tt1:checked + label {
+	border: 2px solid #FFC90E;
+	background: url(../imagenes/lineass2.png) -5px -14px no-repeat;
+}
+
+input#tt4:checked + label {
+	border: 2px solid #FFC90E;
+	background: url(../imagenes/lineass2.png) -58px -14px no-repeat;
+}
+
+input#tt8:checked + label {
+	border: 2px solid #FFC90E;
+	background: url(../imagenes/lineass2.png) -111px -14px no-repeat;
+}
+
+input#tt12:checked + label {
+	border: 2px solid #FFC90E;
+	background: url(../imagenes/lineass2.png) -5px -33px no-repeat;
+}
+
+input#tt16:checked + label {
+	border: 2px solid #FFC90E;
+	background: url(../imagenes/lineass2.png) -58px -33px no-repeat;
+}
+
+input#tt20:checked + label {
+	border: 2px solid #FFC90E;
+	background: url(../imagenes/lineass2.png) -111px -33px no-repeat;
+}
+
+/* Color Seleccionado */
+input#icolor1:checked + label {
+	border-color: #FFC90E;
+}
+
+input#icolor2:checked + label {
+	border-color: #FFC90E;
+}
+
+
+	
+
+}

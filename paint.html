@@ -1,0 +1,198 @@
+<html>
+<head>
+	<title>Paint</title>
+	<link rel="stylesheet" type="text/css" href="estilos/estilos.css">
+	<script type="text/javascript" src="scripts/scriptClase.js"></script>
+	<script type="text/javascript" src="scripts/scriptEventos.js"></script>
+
+</head>
+<body>
+	<div id="contenedor">
+
+		<div id="panelHerramientas">
+
+			<div id="panelNuevo" class="floatLeft">
+				<label id="btNuevo" for="bNuevo" class="hover">Nuevo</label>
+				<input type="submit"  id="bNuevo" class="oculto">
+
+				<label class="hover" id="btDeshacer" for="bDeshacer">Nuevo</label>
+				<input type="submit"  id="bDeshacer" class="oculto">
+
+				<label class="hover" id="btRehacer" for="bRehacer">Nuevo</label>
+				<input type="submit"  id="bRehacer" class="oculto">
+			</div>
+			
+			<div id="panelImagen" class="floatLeft">
+			<input  type="radio" class="radio oculto" name="radio" checked="checked" id="Lapiz" value="lapiz">
+				<label id="lLapiz" for="Lapiz" class="hover">lapiz</label>
+				
+
+				<input type="radio" class="radio oculto" name="radio" id="Texto">
+				<label id="lTexto" for="Texto" class="hover">escribir</label>
+				
+				<input type="radio" class="radio oculto" name="radio" id="Borrar">
+				<label id="lBorrar" for="Borrar" class="hover">borrar</label>
+				
+				<input type="radio" class="radio oculto" name="radio" id="ObtenerColor">
+				<label id="lObtenerColor" for="ObtenerColor" class="hover">obtenerColor</label>
+				
+
+			</div>
+
+			<div id="panelTexto" class="oculto">
+
+				<h3>Texto</h3>
+
+
+				<div id="selects">
+					<select id="tipoLetra">
+					  <option selected="selected" value="Calibri">Calibri</option>
+					  <option value="Times New Roman">Times New Roman</option>
+					  <option value="Courier">Courier</option>
+					  <option value="Lucida Calligraphy">Lucida Calligraphy</option>
+					  <option value="CAC Champagne">CAC Champagne</option>
+					  <option value="Aharoni">Aharoni</option>
+					</select>
+
+					<select id="tamanioLetra">
+					  <option selected="selected" value="10">10</option>
+					  <option value="7">7</option>
+					  <option value="8">9</option>
+					  <option value="9">9</option>
+					  <option value="10">10</option>
+					  <option value="11">11</option>
+					  <option value="12">12</option>
+					  <option value="13">13</option>
+					  <option value="14">14</option>
+					  <option value="15">15</option>
+					  <option value="16">16</option>
+					  <option value="17">17</option>
+					  <option value="18">18</option>
+					  <option value="19">19</option>
+					  <option value="20">20</option>
+					  <option value="21">21</option>
+					  <option value="22">22</option>
+					  <option value="23">23</option>
+					</select>
+				</div>
+
+				<div id="inputs">
+					<label id="lbold" for="bold" class="hover">Negrita</label>
+					<input type="radio" class="radTexto oculto" name="letra" id="bold">
+
+					<label id="litalic" for="italic" class="hover">Cursiva</label>
+					<input type="radio" class="radTexto oculto" name="radio" id="italic">
+
+					<label id="lNormal" for="Normal" class="hover">Normal</label>
+					<input type="radio" class="radTexto oculto" name="radio" id="Normal">
+
+					<label id="lSalir" for="Salir" class="hover">Salir</label>
+					<input type="salir" id="Salir" class="oculto">
+				</div>
+
+
+			</div>
+				
+				<div id="panelFormas" class="floatLeft">
+
+				
+					<div id="objeto3D">
+						<input type="radio" class="radio oculto" name="radio" id="Linea">
+						<label class="herramienta" id="lLinea" for="Linea" class="hover">linea</label>
+						
+						<input type="radio" class="radio oculto" name="radio" id="Rectangulo">
+						<label id="lRectangulo" for="Rectangulo" class="hover">rectangulo</label>
+						
+						<input type="radio" class="radio oculto" name="radio" id="TrianguloRecto">
+						<label id="lTrianguloRecto" for="TrianguloRecto" class="hover">triangulorecto</label
+						
+						<input type="radio" class="radio oculto" name="radio" id="Rombo">
+						<label id="lRombo" for="Rombo" class="hover">rombo</label>
+						
+						<input type="radio" class="radio oculto" name="radio" id="Triangulo">
+						<label id="lTriangulo" for="Triangulo" class="hover">triangulo</label>
+						
+						<input type="radio" class="radio oculto" name="radio" id="Flecha">
+						<label id="lFlecha" for="Flecha" class="hover">flecha</label>
+						
+						<input type="radio" class="radio oculto" name="radio" id="FlechaH">
+						<label id="lFlechaH" for="FlechaH" class="hover">flechah</label>
+						
+						<input type="radio" class="radio oculto" name="radio" id="Trayectoria">
+						<label id="lTrayectoria" for="Trayectoria" class="hover">trayectoria</label>
+						
+						<input type="radio" class="radio oculto" name="radio" id="Elipse">
+						<label id="lElipse" for="Elipse" class="hover">elipse</label>
+
+						<input type="radio" class="radio oculto" name="radio" id="Pentagono">
+						<label id="lPentagono" for="Pentagono" class="hover">pentagono</label>
+
+						<input type="radio" class="radio oculto" name="radio" id="Hexagono">
+						<label id="lHexagono" for="Hexagono" class="hover">hexagono</label>
+
+						<input type="radio" class="radio oculto" name="radio" id="Octagono">
+						<label id="lOctagono" for="Octagono" class="hover">octagono</label>
+						
+					</div>
+
+				
+
+					<div id="btnDesplazamiento">
+
+						<label id="lArriba" for="arriba" class="hover">iconoArriba</label>
+						<input value="arriba" class="oculto" id="arriba">
+						<label id="lAbajo" for="abajo" class="hover">iconoAbajo</label>
+						<input value="abajo" class="oculto" id="abajo">
+					</div>
+
+				</div>
+
+				
+			
+
+			<div id="panelTamanioColor" class="floatLeft">
+
+				<div id="grosor">
+
+					<input type="radio" name="grosor" class="oculto" id="tt1" class="radioGrosor" checked="checked">
+					<label id="t1" for="tt1" class="hover">t1</label>
+					
+					<input type="radio" name="grosor" class="oculto" id="tt4" class="radioGrosor">
+					<label id="t2" for="tt4" class="hover">t1</label>
+					
+					<input type="radio" name="grosor" class="oculto" id="tt8" class="radioGrosor">
+					<label id="t3" for="tt8" class="hover">t1</label>
+					
+					<input type="radio" name="grosor" class="oculto" id="tt12" class="radioGrosor">
+					<label id="t4" for="tt12" class="hover">t1</label>
+					
+					<input type="radio" name="grosor" class="oculto" id="tt16" class="radioGrosor">
+					<label id="t5" for="tt16" class="hover">t1</label>
+					
+					<input type="radio" name="grosor" class="oculto" id="tt20" class="radioGrosor">
+					<label id="t6" for="tt20" class="hover">t1</label>
+					
+
+				</div>
+				<input type="radio" name="col" id="icolor1" class="propiedades oculto" checked>
+				<label id="color1" for="icolor1" class="hover"></label>
+				
+				<input type="radio" name="col" id="icolor2" class="propiedades oculto">
+				<label id="color2" for="icolor2" class="hover"></label>
+				
+
+				<input type="color" id="iColor" class="hover">
+			
+
+			</div>
+		</div>
+
+		<div id="subcontenedor">	
+			<canvas id="myCanvas" width="910" height="500"></canvas>
+			
+			
+			
+		</div>
+	</div>
+</body>
+</html>
